@@ -52,7 +52,7 @@ export default function MovieModal({ movie, onClose }: MovieModalProps) {
           src={
             movie.backdrop_path
               ? `https://image.tmdb.org/t/p/original${movie.backdrop_path}`
-              : "https://via.placeholder.com/1280x720?text=No+Image"
+              : "/fallback.png"
           }
           alt={movie.title}
           className={css.image}
